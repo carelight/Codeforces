@@ -1,0 +1,11 @@
+hello this is Anshul from here You will have some questions of codeforces and gfg daily in this repo
+so do star and ask for question expalantion
+
+GFG Love bubber 450 Questions sheet 
+only tough questions
+
+
+* cmd to git commit from vs code
+git add.
+git  commit -a -m "..."
+git  push origin9 master 
