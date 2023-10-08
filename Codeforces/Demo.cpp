@@ -1,46 +1,20 @@
-# include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
+long long n,k,q,res,ans;
+int t;
 int main(){
-       
-
-       int t;
-       cin>>t;
-
-       while(t--){
-           
-           int n ;
-           cin>>n;     // totsl sets
-      
-      set<int>s;
-      vector<set<int>>a(n);
-              for(int j=0;j<n;j++){
-                  
-                int m;cin>>m;   // size of each set
-
-                for(int i=0;i<m;i++){
-                  int c=0; cin>>c;
-                  s.insert(c);
-                  a[j].insert(c);
-                }
-        
-             }
-
-int rws=0;
-          
-          for(int i:s){
-
-            set<int>mp;
-            for(int j=0;j<n;j++){
-
-                if(a[j].find(i)==a[j].end()){
-                       
-                       for(auto f :a[j]) mp.insert(f);
-                }
-            }
-            rws=max(rws,(int)mp.size());
-          }
-
-          cout<<rws<<endl;
-        }
-       return 0; 
+cin>>t;
+while(t--){
+	res=0,ans=0;
+	cin>>n>>k>>q;
+	for(int i=1;i<=n;i++){
+		int m;
+		cin>>m;
+		if(m<=q)ans++; 
+		else ans=0;
+		if(ans>=k)res=res+(ans-k+1);
+		
+	}
+	cout<<res<<endl;
+}
 }

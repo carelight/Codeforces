@@ -2,7 +2,7 @@ hello this is Anshul from here You will have some questions of codeforces and gf
 so do star and ask for question expalantion
 
 GFG Love bubber 450 Questions sheet 
-only tough questions
+
 
 
 * cmd to git commit from vs code
